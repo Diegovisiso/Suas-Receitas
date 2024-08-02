@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "628880770469",
+    "firebase_url": "https://teste-b22e9.firebaseio.com",
+    "project_id": "teste-b22e9",
+    "storage_bucket": "teste-b22e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628880770469:android:80c359ca55cbe67a",
+        "android_client_info": {
+          "package_name": "com.example.diego.receitas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628880770469-r2vusk3co2f3opgpee9b399ivoicia77.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.diego.receitas",
+            "certificate_hash": "2412f49968549dbce4f855287fa19075bf45f0ba"
+          }
+        },
+        {
+          "client_id": "628880770469-hslu5qokkj7mtknbo2t2h8t7m17n7ebj.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "628880770469-hslu5qokkj7mtknbo2t2h8t7m17n7ebj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC01uaNknKqSqpBP6YMkXX0rH7h1LjZpFQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628880770469-hslu5qokkj7mtknbo2t2h8t7m17n7ebj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

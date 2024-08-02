@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.Main">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:elevation="0dp"
+        android:background="@color/ColorBackgroundTabPage"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+
+    </android.support.v4.view.ViewPager>
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorBackgroundTabPage"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/new_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    app:popupTheme="@style/AppTheme.PopupOverlay"
+                    android:background="@color/colorPrimary"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                        <TextView
+                            android:id="@+id/tittle"
+                            android:layout_width="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ananda"
+                            android:layout_marginLeft="14dp"
+                            android:textAlignment="center"
+                            android:textSize="25dp"
+                            android:text="Suas Receitas"
+                            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"/>
+
+                </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Categorias"
+                android:textSize="14sp"
+                android:textAlignment="gravity"
+                android:gravity="start"
+                android:layout_marginStart="14dp"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="10dp"/>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rv_Recipe_type"/>
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="14dp"
+            android:layout_marginLeft="14dp"
+            android:background="@color/colorBackground"
+
+            >
+            <LinearLayout
+                android:layout_width="192dp"
+                android:layout_height="match_parent"
+                android:background="@color/ColorBackgroundTabPage">
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/appCompatTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ColorBackgroundTabPage"
+                android:text="Ultimas Receitas"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center|left">
+
+            </android.support.v7.widget.AppCompatTextView>
+        </LinearLayout>
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="192dp"
+                android:layout_height="50dp"
+                android:background="@color/ColorBackgroundTabPage"
+                android:theme="@style/CustomActionBar"
+                app:layout_constraintEnd_toEndOf="@+id/appCompatTextView"
+                app:tabGravity="fill"
+                app:tabMode="fixed" />
+
+        </LinearLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/new_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_action_add"
+      />
+
+</android.support.design.widget.CoordinatorLayout>

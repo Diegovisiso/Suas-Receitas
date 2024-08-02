@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diego.receitas.Cadastros.CadastroReceita">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarcadastroreceita"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/ContentCad"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.diego.receitas.Cadastros.CadastroReceita"
+        tools:showIn="@layout/activity_add_recipe">
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/lbl_nome_receita"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="0dp"
+            android:layout_height="51dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nome da Receia"
+            app:layout_constraintEnd_toEndOf="@+id/textNome"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textNome"
+            app:layout_constraintTop_toBottomOf="@+id/textNome" />
+
+        <TextView
+            android:id="@+id/textTempoPreparo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/lbl_temppreparo"
+            app:layout_constraintEnd_toEndOf="@+id/editNome"
+            app:layout_constraintStart_toEndOf="@+id/textServeQuantas"
+            app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+        <EditText
+            android:id="@+id/editTempoPreparo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="time"
+            app:layout_constraintEnd_toEndOf="@+id/textTempoPreparo"
+            app:layout_constraintStart_toStartOf="@+id/textTempoPreparo"
+            app:layout_constraintTop_toBottomOf="@+id/textTempoPreparo" />
+
+        <TextView
+            android:id="@+id/textServeQuantas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/lbl_serve_quantas_pessoas"
+            app:layout_constraintEnd_toStartOf="@+id/textTempoPreparo"
+            app:layout_constraintStart_toStartOf="@+id/editNome"
+            app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+        <EditText
+            android:id="@+id/editServeQuantas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="@+id/textServeQuantas"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textServeQuantas"
+            app:layout_constraintTop_toBottomOf="@+id/textServeQuantas" />
+
+        <TextView
+            android:id="@+id/textIngredientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:text="@string/lbl_Ingredientes"
+            app:layout_constraintEnd_toEndOf="@+id/editTempoPreparo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editServeQuantas"
+            app:layout_constraintTop_toBottomOf="@+id/editNome" />
+
+        <EditText
+            android:id="@+id/editIngredientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/textIngredientes"
+            app:layout_constraintStart_toStartOf="@+id/textIngredientes"
+            app:layout_constraintTop_toBottomOf="@+id/textIngredientes" />
+
+        <TextView
+            android:id="@+id/textModoPreparo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/lbl_modo_preparo"
+            app:layout_constraintEnd_toEndOf="@+id/editIngredientes"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editIngredientes"
+            app:layout_constraintTop_toBottomOf="@+id/editIngredientes" />
+
+        <EditText
+            android:id="@+id/editModoPreparo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            app:layout_constraintEnd_toEndOf="@+id/textModoPreparo"
+            app:layout_constraintStart_toStartOf="@+id/textModoPreparo"
+            app:layout_constraintTop_toBottomOf="@+id/textModoPreparo" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.widget.CoordinatorLayout>
