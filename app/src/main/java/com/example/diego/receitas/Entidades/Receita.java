@@ -6,6 +6,9 @@ package com.example.diego.receitas.Entidades;
 
 public class Receita {
 
+
+    /* teste */
+
     public int codigo;
     public String nomereceita;
     public String servequantas;
